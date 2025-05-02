@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ADA Health Clone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">ADA Health Clone</h1>
+      <nav class="space-x-6 text-gray-600">
+        <a href="#features" class="hover:text-blue-600 transition">Features</a>
+        <a href="#assessment" class="hover:text-blue-600 transition">Assessment</a>
+        <a href="#about" class="hover:text-blue-600 transition">About</a>
+        <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-12">
+    <section class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-4xl font-extrabold mb-4">Your Personal Health Companion</h2>
+      <p class="text-lg text-gray-600">Get personalized health assessments and guidance anytime, anywhere.</p>
+      <a href="#assessment" class="inline-block mt-6 px-8 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">Start Assessment</a>
+    </section>
+
+    <section id="assessment" class="bg-white rounded-lg shadow p-8 max-w-3xl mx-auto mb-16">
+      <h3 class="text-2xl font-semibold mb-6">Health Assessment</h3>
+      <form class="space-y-6">
+        <div>
+          <label for="age" class="block mb-2 font-medium">Age</label>
+          <input type="number" id="age" name="age" min="0" max="120" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+        <div>
+          <label for="gender" class="block mb-2 font-medium">Gender</label>
+          <select id="gender" name="gender" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="" disabled selected>Select your gender</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="symptoms" class="block mb-2 font-medium">Describe your symptoms</label>
+          <textarea id="symptoms" name="symptoms" rows="4" placeholder="E.g. headache, fever, cough" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Get Assessment</button>
+      </form>
+    </section>
+
+    <section id="features" class="max-w-4xl mx-auto mb-16">
+      <h3 class="text-3xl font-semibold mb-8 text-center">Features</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div>
+          <i class="fas fa-stethoscope text-blue-600 text-4xl mb-4"></i>
+          <h4 class="font-semibold text-xl mb-2">Personalized Assessments</h4>
+          <p class="text-gray-600">Receive health assessments tailored to your symptoms and history.</p>
+        </div>
+        <div>
+          <i class="fas fa-mobile-alt text-blue-600 text-4xl mb-4"></i>
+          <h4 class="font-semibold text-xl mb-2">Accessible Anywhere</h4>
+          <p class="text-gray-600">Use our platform on any device, anytime, anywhere.</p>
+        </div>
+        <div>
+          <i class="fas fa-shield-alt text-blue-600 text-4xl mb-4"></i>
+          <h4 class="font-semibold text-xl mb-2">Privacy & Security</h4>
+          <p class="text-gray-600">Your data is safe with us, protected by industry standards.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="max-w-3xl mx-auto mb-16 text-center">
+      <h3 class="text-3xl font-semibold mb-4">About ADA Health Clone</h3>
+      <p class="text-gray-700">This is a demo website inspired by ADA Health, built to showcase a clean, modern health assessment platform UI using Tailwind CSS.</p>
+    </section>
+
+    <section id="contact" class="max-w-3xl mx-auto mb-16 text-center">
+      <h3 class="text-3xl font-semibold mb-4">Contact Us</h3>
+      <p class="text-gray-700 mb-4">Have questions or feedback? Reach out to us!</p>
+      <a href="mailto:contact@adahealthclone.com" class="text-blue-600 hover:underline">contact@adahealthclone.com</a>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t py-6 text-center text-gray-600 text-sm">
+    &copy; 2024 ADA Health Clone. All rights reserved.
+  </footer>
+</body>
+</html>
